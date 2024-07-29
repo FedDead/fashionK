@@ -1,0 +1,21 @@
+<p-menubar [model]="items" class="flex-auto align-items-center">
+  <ng-template pTemplate="start">
+    <a routerLink="/" class="mx-3">
+      <img src="../../../../assets/mariposa.png" alt="Imagen de mariposa">
+    </a>
+  </ng-template>
+  <ng-template pTemplate="item" let-item>
+    <ng-container>
+      <a [routerLink]="item.url" class="p-menuitem-link mx-3">
+          <span [class]="item.icon"></span>
+          <span class="ml-2">{{ item.label }}</span>
+      </a>
+    </ng-container>
+  </ng-template>
+  <ng-template pTemplate="end" class="flex flex-row">
+      <shared-search/>
+      <p-avatar shape="circle" class="ml-8 mr-4">
+          <span class="pi pi-user"></span>
+      </p-avatar>
+  </ng-template>
+</p-menubar>

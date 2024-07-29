@@ -1,0 +1,9 @@
+
+/* Estilos generales */
+body{
+  max-height: 100vh;
+  height: 100%;
+}
+.w-30rem{
+  width: 55rem !important;
+}
